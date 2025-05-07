@@ -3,133 +3,268 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Workato Templates by Glavin</title>
+    <title>Workato Templates</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-    <header>
+    <header class="site-header">
         <div class="container">
-            <h1><i class="fas fa-cogs"></i> Workato Templates</h1>
-            <nav>
+            <div class="logo">
+                <a href="#"><img src="/api/placeholder/130/40" alt="Workato Templates" /></a>
+            </div>
+            <nav class="main-nav">
                 <ul>
-                    <li><a href="#" class="active">Home</a></li>
-                    <li><a href="#">Templates</a></li>
+                    <li><a href="#" class="active">Templates</a></li>
                     <li><a href="#">Categories</a></li>
+                    <li><a href="#">Connectors</a></li>
                     <li><a href="#">About</a></li>
                 </ul>
             </nav>
+            <div class="header-actions">
+                <button class="search-toggle"><i class="fas fa-search"></i></button>
+                <button class="primary-button">Get Started</button>
+            </div>
         </div>
     </header>
 
-    <section class="hero">
+    <div class="search-overlay">
         <div class="container">
-            <h2>Find the Perfect Automation Recipe</h2>
-            <p>Browse our collection of Workato recipe templates to accelerate your integration projects</p>
-            <div class="search-box">
+            <div class="search-wrapper">
                 <input type="text" placeholder="Search templates...">
                 <button><i class="fas fa-search"></i></button>
             </div>
         </div>
+    </div>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Automate Faster with Workato Templates</h1>
+                <p>Browse pre-built recipe templates to accelerate your integration and automation projects</p>
+                <div class="hero-actions">
+                    <button class="primary-button">Explore Templates</button>
+                    <button class="secondary-button">Submit a Template</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="/api/placeholder/500/350" alt="Workato Templates" />
+            </div>
+        </div>
     </section>
 
-    <section class="featured-templates">
+    <section class="features">
         <div class="container">
-            <h2>Featured Templates</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Quick Start</h3>
+                    <p>Accelerate your integration projects with ready-to-use recipes</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Best Practices</h3>
+                    <p>Templates follow proven implementation patterns and standards</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-plug"></i>
+                    </div>
+                    <h3>Popular Connectors</h3>
+                    <p>Find templates for all major enterprise applications</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="popular-templates">
+        <div class="container">
+            <div class="section-header">
+                <h2>Popular Templates</h2>
+                <a href="#" class="view-all">View all templates <i class="fas fa-arrow-right"></i></a>
+            </div>
             <div class="templates-grid">
                 <div class="template-card">
-                    <div class="template-icon"><i class="fas fa-file-invoice"></i></div>
+                    <div class="template-header">
+                        <div class="template-connector">
+                            <span class="connector-badge salesforce">Salesforce</span>
+                            <span class="connector-badge netsuite">NetSuite</span>
+                        </div>
+                        <div class="template-meta">
+                            <span><i class="fas fa-star"></i> 4.8</span>
+                        </div>
+                    </div>
                     <h3>Salesforce to NetSuite Invoice Sync</h3>
                     <p>Automatically sync invoices from Salesforce to NetSuite with field mapping</p>
-                    <div class="template-meta">
-                        <span><i class="fas fa-star"></i> 4.8</span>
-                        <span><i class="fas fa-download"></i> 124</span>
+                    <div class="template-tags">
+                        <span class="tag">Sales</span>
+                        <span class="tag">Finance</span>
+                        <span class="tag">Sync</span>
                     </div>
-                    <a href="#" class="btn">View Template</a>
+                    <a href="#" class="template-link">View Template <i class="fas fa-chevron-right"></i></a>
                 </div>
                 <div class="template-card">
-                    <div class="template-icon"><i class="fas fa-calendar-check"></i></div>
+                    <div class="template-header">
+                        <div class="template-connector">
+                            <span class="connector-badge slack">Slack</span>
+                            <span class="connector-badge google">Google Calendar</span>
+                        </div>
+                        <div class="template-meta">
+                            <span><i class="fas fa-star"></i> 4.6</span>
+                        </div>
+                    </div>
                     <h3>Slack to Google Calendar Events</h3>
                     <p>Create Google Calendar events from Slack messages with a simple command</p>
-                    <div class="template-meta">
-                        <span><i class="fas fa-star"></i> 4.6</span>
-                        <span><i class="fas fa-download"></i> 98</span>
+                    <div class="template-tags">
+                        <span class="tag">Productivity</span>
+                        <span class="tag">Collaboration</span>
                     </div>
-                    <a href="#" class="btn">View Template</a>
+                    <a href="#" class="template-link">View Template <i class="fas fa-chevron-right"></i></a>
                 </div>
                 <div class="template-card">
-                    <div class="template-icon"><i class="fas fa-tasks"></i></div>
+                    <div class="template-header">
+                        <div class="template-connector">
+                            <span class="connector-badge jira">Jira</span>
+                            <span class="connector-badge asana">Asana</span>
+                        </div>
+                        <div class="template-meta">
+                            <span><i class="fas fa-star"></i> 4.7</span>
+                        </div>
+                    </div>
                     <h3>Jira to Asana Task Integration</h3>
                     <p>Sync Jira issues with Asana tasks bi-directionally to keep teams aligned</p>
-                    <div class="template-meta">
-                        <span><i class="fas fa-star"></i> 4.7</span>
-                        <span><i class="fas fa-download"></i> 156</span>
+                    <div class="template-tags">
+                        <span class="tag">Project Management</span>
+                        <span class="tag">Sync</span>
                     </div>
-                    <a href="#" class="btn">View Template</a>
+                    <a href="#" class="template-link">View Template <i class="fas fa-chevron-right"></i></a>
                 </div>
-            </div>
-            <div class="view-all">
-                <a href="#" class="btn btn-outline">View All Templates</a>
+                <div class="template-card">
+                    <div class="template-header">
+                        <div class="template-connector">
+                            <span class="connector-badge servicenow">ServiceNow</span>
+                            <span class="connector-badge teams">Microsoft Teams</span>
+                        </div>
+                        <div class="template-meta">
+                            <span><i class="fas fa-star"></i> 4.9</span>
+                        </div>
+                    </div>
+                    <h3>ServiceNow Ticket Notifications</h3>
+                    <p>Send Microsoft Teams notifications for critical ServiceNow incidents</p>
+                    <div class="template-tags">
+                        <span class="tag">IT Service</span>
+                        <span class="tag">Notifications</span>
+                    </div>
+                    <a href="#" class="template-link">View Template <i class="fas fa-chevron-right"></i></a>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="categories">
+    <section class="category-section">
         <div class="container">
-            <h2>Browse by Category</h2>
+            <div class="section-header">
+                <h2>Browse by Category</h2>
+            </div>
             <div class="category-grid">
                 <a href="#" class="category-card">
-                    <i class="fas fa-chart-line"></i>
-                    <h3>CRM & Sales</h3>
+                    <div class="category-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Sales & CRM</h3>
+                    <span class="template-count">24 templates</span>
                 </a>
                 <a href="#" class="category-card">
-                    <i class="fas fa-shopping-cart"></i>
-                    <h3>E-Commerce</h3>
-                </a>
-                <a href="#" class="category-card">
-                    <i class="fas fa-envelope"></i>
-                    <h3>Email Marketing</h3>
-                </a>
-                <a href="#" class="category-card">
-                    <i class="fas fa-dollar-sign"></i>
+                    <div class="category-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
                     <h3>Finance & ERP</h3>
+                    <span class="template-count">18 templates</span>
                 </a>
                 <a href="#" class="category-card">
-                    <i class="fas fa-ticket-alt"></i>
-                    <h3>Help Desk</h3>
+                    <div class="category-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>HR & Recruiting</h3>
+                    <span class="template-count">15 templates</span>
                 </a>
                 <a href="#" class="category-card">
-                    <i class="fas fa-project-diagram"></i>
+                    <div class="category-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3>E-Commerce</h3>
+                    <span class="template-count">12 templates</span>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Customer Support</h3>
+                    <span class="template-count">20 templates</span>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-tasks"></i>
+                    </div>
                     <h3>Project Management</h3>
+                    <span class="template-count">17 templates</span>
                 </a>
             </div>
         </div>
     </section>
 
-    <footer>
+    <section class="cta-section">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <h2><i class="fas fa-cogs"></i> Workato Templates</h2>
-                    <p>Accelerate your automation journey with pre-built Workato recipes</p>
+            <div class="cta-content">
+                <h2>Ready to accelerate your automation?</h2>
+                <p>Start with our templates and customize them to fit your specific business needs.</p>
+                <button class="primary-button">Get Started</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <img src="/api/placeholder/130/40" alt="Workato Templates" />
+                    <p>Community-driven templates to help you get the most out of Workato's automation platform.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
                 </div>
                 <div class="footer-links">
-                    <h3>Quick Links</h3>
+                    <h4>Templates</h4>
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Templates</a></li>
-                        <li><a href="#">Categories</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Popular Templates</a></li>
+                        <li><a href="#">New Additions</a></li>
+                        <li><a href="#">Submit a Template</a></li>
+                        <li><a href="#">Request a Template</a></li>
                     </ul>
                 </div>
-                <div class="footer-newsletter">
-                    <h3>Stay Updated</h3>
-                    <p>Subscribe to get notified about new templates</p>
-                    <div class="newsletter-form">
-                        <input type="email" placeholder="Your email">
-                        <button>Subscribe</button>
-                    </div>
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Workato Academy</a></li>
+                        <li><a href="#">Community Forums</a></li>
+                        <li><a href="#">API Reference</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
                 </div>
             </div>
             <div class="footer-bottom">
