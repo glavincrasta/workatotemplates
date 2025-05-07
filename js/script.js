@@ -9,6 +9,9 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Initialize any interactive components
     initComponents();
+    
+    // Initialize search toggle
+    initSearchToggle();
 });
 
 /**
@@ -75,10 +78,8 @@ function initSmoothScroll() {
 function initComponents() {
     // This can be expanded as more interactive elements are added
     
-    // Mobile menu toggle functionality could go here
-    // Expand/collapse functionality for categories could go here
-    // Template filtering functionality could go here
-}
+    // Template hover effects
+    const templateCards = document.querySelectorAll
 
 /**
  * Template data will eventually come from a JSON file or API
